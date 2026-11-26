@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cinzel', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #161815;
+    color: #f4efe6;
+    font-family: var(--font-sans);
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom subtle scrollbar for modal content if viewport is short */
+.sandbox-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.sandbox-scroll::-webkit-scrollbar-track {
+  background: rgba(20, 22, 18, 0.4);
+}
+.sandbox-scroll::-webkit-scrollbar-thumb {
+  background: rgba(180, 155, 108, 0.35);
+  border-radius: 3px;
+}

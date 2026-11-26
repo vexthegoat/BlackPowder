@@ -1,0 +1,6 @@
+{
+  "name": "Blackpowder Sandbox",
+  "description": "A 2D musket warfare sandbox game with placeable infantry regiments, fortifications, dynamic weather, animated soldiers, smoke, muzzle flashes, and procedural battlefield audio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
